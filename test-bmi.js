@@ -1,11 +1,9 @@
 function calculateBMI(weight, height) {
-    const BMI = weight / (height * height)
-    return BMI
+    return weight / (height * height)
 }
 
 function getBMIMeaning(weight, height) {
     const BMI = calculateBMI(weight, height)
-
     if (BMI < 18.5) {
         return 'Underweight'
     } else if (18.5 <= BMI && BMI <= 24.9) {
